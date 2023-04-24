@@ -21,7 +21,7 @@ function App() {
     },
   });
 
-  console.log("Hi")
+  console.log("Hi master")
 
 
   return (
