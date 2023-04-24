@@ -64,11 +64,12 @@ const Header = () => {
 
         <div className="flex items-center">
           <Button onClick={handleTheme}>
-            {!theme
-              ? // <DarkModeIcon className="!w-6 !h-6 lg:!w-10 lg:!h-10 !text-black !px-0 !mx-0" />
-                "Dark"
-              : // <Brightness4Icon className="!w-6 !h-6 lg:!w-10 lg:!h-10 !text-white" />
-                "Light"}
+            {!theme ? (
+              <DarkModeIcon className="!w-6 !h-6 lg:!w-10 lg:!h-10 !text-black !px-0 !mx-0" />
+            ) : (
+              // "Dark"
+              <Brightness4Icon className="!w-6 !h-6 lg:!w-10 lg:!h-10 !text-white" />
+            )}
           </Button>
           {userData && userData.length === 0 && (
             <CustomButton
