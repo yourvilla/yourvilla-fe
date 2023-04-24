@@ -21,6 +21,9 @@ function App() {
     },
   });
 
+  console.log("Hi")
+
+
   return (
     <div>
       <BrowserRouter>
